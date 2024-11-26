@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Ações da Bolsa de Valores (B3)</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #333; color: #fff; padding: 10px 20px; text-align: center; }
+        main { padding: 20px; max-width: 1200px; margin: auto; }
+        .chart { margin-bottom: 40px; }
+        img { max-width: 100%; height: auto; display: block; margin: auto; }
+        footer { text-align: center; padding: 10px 0; background-color: #333; color: white; position: fixed; width: 100%; bottom: 0; }
+    </style>
+</head>
+<body>
+    <header><h1>Dashboard - Ações da Bolsa de Valores (B3)</h1></header>
+    <main>
+        <section class="chart"><h2>Valores ao Longo do Tempo</h2><img src="/plots/line_chart" alt="Gráfico de Linha"></section>
+        <section class="chart"><h2>Distribuição da Variação Percentual</h2><img src="/plots/histogram" alt="Histograma"></section>
+        <section class="chart"><h2>Média de Valores por Tipo de Ação</h2><img src="/plots/bar_chart" alt="Gráfico de Barras"></section>
+        <section class="chart"><h2>Correlação: Variação vs. Valor</h2><img src="/plots/scatter_plot" alt="Gráfico de Dispersão"></section>
+        <footer><p>Desenvolvido com Python e Flask</p></footer>
+    </main>
+</body>
+</html>
